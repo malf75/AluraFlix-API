@@ -149,7 +149,7 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_THROTTLE_RATES': {
         'anon': '50/day',
-        'user': '1000/day'
+        'user': '500/day'
     },
     'SIMPLE_JWT':{
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
