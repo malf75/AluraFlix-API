@@ -39,3 +39,4 @@ class ListaVideosFree(generics.ListAPIView):
         return queryset
     serializer_class = VideoSerializer
     permission_classes = [AllowAny]
+    print('test')
