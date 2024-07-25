@@ -12,6 +12,11 @@ Esta API possui autenticação JWT. Os endpoints relacionados à autenticação 
 - `POST /token/`: Gera um novo token de acesso e um token de refresh.
 - `POST /refresh/`: Gera um novo token de acesso usando um token de refresh.
 - `GET /secure/`: Verifica se o token de acesso é válido e se o usuário está autenticado.
+  
+  A API também aplica rate limiting para proteger contra abusos:
+
+- **Anônimos:** 50 requisições por dia.
+- **Usuários Autenticados:** 500 requisições por dia.
 
 ### Endpoints
 
