@@ -30,6 +30,7 @@ GET /videos/${id}
 Parâmetro   | Tipo       | Descrição
 ------------|------------|------------
 id          | string     | **Obrigatório**. O ID do item que você quer.
+api_key     | string     | **Obrigatório**. A chave da sua API.
 
 #### Adiciona um novo vídeo
 
@@ -78,6 +79,7 @@ GET /categorias/${id}
 Parâmetro     | Tipo       | Descrição
 --------------|------------|------------
 id            | string     | **Obrigatório**. O ID da categoria que você deseja recuperar.
+api_key     | string     | **Obrigatório**. A chave da sua API.
 
 #### Adiciona uma nova categoria
 
