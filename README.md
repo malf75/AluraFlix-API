@@ -116,6 +116,39 @@ Parâmetro     | Tipo       | Descrição
 id            | string     | **Obrigatório**. O ID da categoria cujos vídeos você deseja listar.
 api_key       | string     | **Obrigatório**. A chave da sua API.
 
+GET /free/
+
+Parâmetro   | Tipo       | Descrição
+------------|------------|------------
+Nenhum      | -          | Retorna os 10 primeiros vídeos. Não é necessária autenticação.
+
+### Autenticação JWT
+
+#### Gera um novo token
+
+POST /token/
+
+Parâmetro     | Tipo       | Descrição
+--------------|------------|------------
+username      | string     | **Obrigatório**. O nome de usuário.
+password      | string     | **Obrigatório**. A senha do usuário.
+
+#### Gera um novo token de acesso usando um token de refresh
+
+POST /refresh/
+
+Parâmetro     | Tipo       | Descrição
+--------------|------------|------------
+refresh       | string     | **Obrigatório**. O token de refresh.
+
+#### Verifica se o token de acesso é válido
+
+GET /secure/
+
+Parâmetro     | Tipo       | Descrição
+--------------|------------|------------
+api_key       | string     | **Obrigatório**. A chave da sua API.
+
 
 ## Rodando localmente
 
